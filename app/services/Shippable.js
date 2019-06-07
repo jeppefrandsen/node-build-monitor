@@ -12,7 +12,7 @@ module.exports = function () {
             };
         },
         makeUrl = function () {
-            var url = self.configuration.url + '/runs?sortBy=createdAt&sortOrder=-1';
+            var url = self.configuration.url + '/runs?sortBy=startedAt&sortOrder=-1';
             if (self.configuration.projects) {
                 url += '&projectIds=' + self.configuration.projects;
             }
